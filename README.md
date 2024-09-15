@@ -1,3 +1,5 @@
+Test message for commits!
+
 # Lecture 1: Course Introduction
 
 This lecture provides an overview of the course, guides you through setting up Visual Studio Code, and demonstrates the proper way to retrieve lecture materials from Github. 
