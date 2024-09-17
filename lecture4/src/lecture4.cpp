@@ -26,6 +26,13 @@ using namespace std::literals::string_literals;
 
 int main() {
 
+    std::string quote{"Just a flesh wound!"};
+
+    for(int i{0}; i<quote.size(); i++) {
+        std::cout << quote[i];
+    }
+    std::cout << "\n";
+
     //</> 1
     //=====================
     // std::cout << typeid("hello, world\n").name() << '\n';  // char [14]
