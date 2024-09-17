@@ -1,18 +1,18 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(lecture2 VERSION 0.1.0)
+project(TARG VERSION 0.1.0)
 
 # Compilation flags
 add_compile_options(-Wall)
 
 # Add executable
-add_executable(lecture2 lecture2/src/lecture2.cpp)
+add_executable(TARG rwa1_Lieberson/exercise2/src/exercise2.cpp)
 
-# add_custom_command(TARGET lecture3 POST_BUILD
-#     COMMAND ./lecture3 | c++filt -t
-#     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-#     COMMENT "Resolve name mangling"
-#     VERBATIM
-# )
+add_custom_command(TARGET TARG POST_BUILD
+    COMMAND ./TARG | c++filt -t
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+    COMMENT "Resolve name mangling"
+    VERBATIM
+)
 
 # add_custom_command(TARGET lecture3 POST_BUILD
 #     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture3
@@ -35,4 +35,4 @@ add_executable(lecture2 lecture2/src/lecture2.cpp)
 
 
 # Set C++ standard to C++17
-set_property(TARGET lecture2 PROPERTY CXX_STANDARD 17)
+set_property(TARGET TARG PROPERTY CXX_STANDARD 17)
