@@ -51,7 +51,22 @@ std::shared_ptr<int> return_shared_ptr() {
     return p;
 }
 
+void swap_values(int &x, int &y) {
+    int temp{x};
+    x = y;
+    y = temp;
+}
+
+
 int main() {
+    int x{5};
+    int y{10};
+
+    swap_values(x, y);
+
+    std::cout << x << " " << y << "\n";
+
+
     //</> 1
     //=====================
     // std::unique_ptr<int> u1 = std::make_unique<int>(5);

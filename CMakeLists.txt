@@ -7,7 +7,7 @@ include_directories(lecture5/include)
 add_compile_options(-Wall -pedantic-errors)
 
 # Add executable
-add_executable(TARG lecture5/src/lecture5.cpp)
+add_executable(TARG lecture6/src/lecture6.cpp)
 
 add_custom_command(TARGET TARG POST_BUILD
     COMMAND ./TARG | c++filt -t
