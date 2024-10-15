@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.20.0)
 project(TARG VERSION 0.1.0)
 
-include_directories(lecture5/include)
+include_directories(lecture7/include)
 
 # Compilation flags
 add_compile_options(-Wall -pedantic-errors)
 
 # Add executable
-add_executable(TARG lecture6/src/lecture6.cpp)
+add_executable(TARG lecture7/src/main.cpp)
 
 add_custom_command(TARGET TARG POST_BUILD
     COMMAND ./TARG | c++filt -t
