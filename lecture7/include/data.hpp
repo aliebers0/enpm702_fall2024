@@ -5,8 +5,15 @@ namespace university {
 
     class Date {
         public:
-            Date(ushort day, ushort month, ushort year);
+            //Date(ushort day, ushort month, ushort year);
             void print_date() const;
+            void get_attribute_offsets() const;
+            university::Date date;
+            Date(){
+                day_ = 15;
+                month_ = 2;
+                year_ = 2025;
+            }
 
         private:
             ushort day_;

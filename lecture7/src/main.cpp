@@ -1,6 +1,8 @@
+#include "date.hpp"
 
-
-int main() {}
+int main() {
+    university::Date date;
+}
 
 // //</>--- code #1
 // //=====================
