@@ -8,6 +8,21 @@
 // Vehicle
 // ===========================================
 
+void driving::Vehicle::drive() const {
+    if(driver_) {
+        if(engine_) {
+            engine_->start(); // or (engine_*).start()
+        }
+        driver_->drive_vehicle();
+    }
+    else {
+        std::cout << "There is no driver, cannot move\n";
+    }
+}
+void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
+    driver_ = driver;
+}
+
 /* write code for drive() and set_driver()*/
 
 // // ===========================================

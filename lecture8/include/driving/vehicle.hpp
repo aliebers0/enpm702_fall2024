@@ -3,17 +3,32 @@
 #include <iostream>
 #include <memory>
 #include <stdexcept>
+#include <string>
 
 #include "driver.hpp"
 #include "engine.hpp"
 
 namespace driving {
-// class forwarding
-// class Driver;
-// class Engine;
+class forwarding
+class Driver;
+class Engine;
 
 class Vehicle {
-    /* write content of the class here*/
+    public:
+        Vehicle(const std::string& model, const std::string& color, unsigned int horsepower) : 
+            model_{model},
+            color_{color},
+            engine_{std::make_unique<driving::Engine>(horsepower)} {
+            
+        }
+        void drive() const;
+        void set_driver(std::shared_ptr<driving:Driver> driver);
+
+    private:
+        std::string model_;
+        std::string color_;
+        std::unique_ptr<driving::Engine> engine_;
+        std::shared_ptr<driving:Driver> driver_;
 };  // class Vehicle
 
 // /**

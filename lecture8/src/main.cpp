@@ -1,4 +1,26 @@
 
+// namespace my_namespace {
+
+//     class A{
+//         public:
+//             A() : a1_{1}, a2_{2} {
+//                 //constructor body
+//             }
+//             A(int x, int y) : a1_{x}, a2_{y} {
+
+//             }
+
+//         private:
+//             int a1_;
+//             int a2_;
+//     }; // class A
+
+// }
+
+// int main() {
+//     my_namespace::A first;
+//     my_namespace::A second(1, 2);
+// }
 
 // //</>--- code #1
 // //=====================
@@ -52,7 +74,36 @@
 //</>--- code #3
 //=====================
 
-// int main(){}
+#include "driving/date.hpp"
+#include "driving/engine.hpp"
+#include "driving/driver.hpp"
+#include "driving/vehicle.hpp"
+#include <iostream>
+#include <memory>
+
+int main(){
+    //-- tested Date class
+    // try {
+    //     driving::Date brithdate{driving::Date(323, 2, 2024)};
+    // } catch(const std::invalid_argument& e) {
+    //     std::cerr << e.what() << "\n";
+    // }
+
+    // //-- tested Engine class
+    // driving::Engine engine(260);
+    // engine.start();
+
+    // //-- tested Driver
+    // driving::Driver alain("Alian Prost", driving::Date{2, 2, 1985})
+    // alain.drive_vehicle();
+    // atd::cout << alain.get_name() << "\n";
+
+    auto hamilton = std::make_shared<driving::Driver>("Lewis Prost", driving::Date{2, 2, 1985})
+    tesla.set_driver(hamilton);
+    auto tesla = std::make_shared<driving::Vehicle tesla("Model S", "Red", 260)>
+    hmailton->set_vehicle(tesla);
+    telsa.drive();
+}
 
 //</>--- code #4
 //=====================
