@@ -8,22 +8,19 @@
 // Vehicle
 // ===========================================
 
-void driving::Vehicle::drive() const {
-    if(driver_) {
-        if(engine_) {
-            engine_->start(); // or (engine_*).start()
+void driving::Vehicle::drive(double distance) {
+    if(driver_){
+        if (engine_) {
+            engine_->start();
         }
-        driver_->drive_vehicle();
-    }
-    else {
-        std::cout << "There is no driver, cannot move\n";
+        driver_->drive_vehicle(distance);
+    } else {
+        std::cout << "There is no driver, the vehicle cannot move" << '\n';
     }
 }
 void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
     driver_ = driver;
 }
-
-/* write code for drive() and set_driver()*/
 
 // // ===========================================
 // // ElectricVehicle
@@ -94,7 +91,7 @@ void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
 //     std::cout.flush();
 // }
 
-// // ===========================================
+// // // ===========================================
 // // void driving::ElectricVehicle::drive(double distance) {
 // //     Vehicle::drive(distance);
 // //     // Assume the vehicle consumes a fixed amount of battery per mile
@@ -126,16 +123,16 @@ void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
 //     std::cout << "Tank level: " << fuel_level_ << " gallons\n";
 // }
 
-// // ===========================================
-// // void driving::GasolineVehicle::drive(double distance) {
-// //     Vehicle::drive(distance);
-// //     double fuel_needed = distance * fuel_consumption_rate_;
-// //     if (fuel_level_ >= fuel_needed) {
-// //         fuel_level_ -= fuel_needed;
-// //         std::cout << "Fuel remaining: " << fuel_level_ << " gallons.\n";
-// //     } else {
-// //         std::cout << "Not enough fuel to drive the full distance. The vehicle stopped after "
-// //                   << (fuel_level_ / fuel_consumption_rate_) << " mi.\n";
-// //         fuel_level_ = 0;
-// //     }
-// // }
+// // // ===========================================
+// void driving::GasolineVehicle::drive(double distance) {
+//     Vehicle::drive(distance);
+//     double fuel_needed = distance * fuel_consumption_rate_;
+//     if (fuel_level_ >= fuel_needed) {
+//         fuel_level_ -= fuel_needed;
+//         std::cout << "Fuel remaining: " << fuel_level_ << " gallons.\n";
+//     } else {
+//         std::cout << "Not enough fuel to drive the full distance. The vehicle stopped after "
+//                   << (fuel_level_ / fuel_consumption_rate_) << " mi.\n";
+//         fuel_level_ = 0;
+//     }
+// }

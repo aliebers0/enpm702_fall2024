@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <memory>
 #include "date.hpp"
 
 namespace driving {
@@ -10,26 +10,22 @@ class Date;
 class Vehicle;
 
 class Driver {
-    public:
-        Driver(const std::string& name, driving::Date dob):
-        name_{name}, date_of_birth_(dob) {
+   public:
+    Driver(const std::string& name, driving::Date dob) : name_{name}, date_of_brith_{dob} {
+        /*body*/
+    }
+    void drive_vehicle(double distance) const;
 
-        }
-        void drive_vehicle() const;
-        driving::Date get_birthdate const {
-            return date_of_birth_;
-        }
-        std::string get_name() const{
-            return name_;
-        }
+    driving::Date get_birthdate() const {
+        return date_of_brith_;
+    }
 
-        void set_vehicle(std::shared_ptr<driving::Vehicle> vehicle) {
-            vehicle_=vehicle;
-        }
-
-    private:
-        std::string name_;
-        driving::Date date_of_birth_;
-        std::weak_ptr<driving::Vehicle> vehicle_;
+    std::string get_name() const {
+        return name_;
+    }
+    
+   private:
+    std::string name_;
+    driving::Date date_of_brith_;
 };  // class Driver
 }  // namespace driving

@@ -3,13 +3,13 @@
 namespace driving {
 
 class Engine {
-    public:
-        Engine(unsigned int horsepower): horsepower_{horsepower} {
-            
-        };
-        void start() const;
+   public:
+    Engine(unsigned int horsepower) : horsepower_{horsepower} {
+        /*body*/
+    }
+    void start() const;
 
-    private:
-        unsigned int horsepower_;
+   private:
+    unsigned int horsepower_;
 };  // class Engine
 }  // namespace driving
