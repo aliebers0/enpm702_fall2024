@@ -9,6 +9,7 @@
 // ===========================================
 
 void driving::Vehicle::drive(double distance) {
+    std::cout << "Base class drive()" << '\n';
     if(driver_){
         if (engine_) {
             engine_->start();
@@ -92,22 +93,22 @@ void driving::ElectricVehicle::display_progressbar(int current, int total) {
 }
 
 // // ===========================================
-// void driving::ElectricVehicle::drive(double distance) {
-//     Vehicle::drive(distance);
-//     // Assume the vehicle consumes a fixed amount of battery per mile
-//     double battery_consumed = distance * battery_consumption_rate_;
+void driving::ElectricVehicle::drive(double distance) {
+    Vehicle::drive(distance);
+    // Assume the vehicle consumes a fixed amount of battery per mile
+    double battery_consumed = distance * battery_consumption_rate_;
 
-//     // Deplete the battery capacity
-//     battery_capacity_ -= battery_consumed;
+    // Deplete the battery capacity
+    battery_capacity_ -= battery_consumed;
 
-//     // Ensure battery does not go below 0
-//     if (battery_capacity_ < 0) {
-//         battery_capacity_ = 0;
-//         std::cerr << "Battery depleted! The vehicle cannot continue.\n";
-//     } else {
-//         std::cout << "Battery remaining: " << battery_capacity_ << "%\n";
-//     }
-// }
+    // Ensure battery does not go below 0
+    if (battery_capacity_ < 0) {
+        battery_capacity_ = 0;
+        std::cerr << "Battery depleted! The vehicle cannot continue.\n";
+    } else {
+        std::cout << "Battery remaining: " << battery_capacity_ << "%\n";
+    }
+}
 
 // ===========================================
 // GasolineVehicle
@@ -123,7 +124,7 @@ void driving::GasolineVehicle::display_tank_level() const {
     std::cout << "Tank level: " << fuel_level_ << " gallons\n";
 }
 
-// // ===========================================
+// ===========================================
 void driving::GasolineVehicle::drive(double distance) {
     Vehicle::drive(distance);
     double fuel_needed = distance * fuel_consumption_rate_;
