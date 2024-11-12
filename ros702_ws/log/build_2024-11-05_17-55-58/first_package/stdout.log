@@ -1,0 +1,34 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/build/first_package
+[ 50%] [32mBuilding CXX object CMakeFiles/hello.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hello[0m
+[100%] Built target hello
+-- Install configuration: ""
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/lib/first_package/hello
+-- Set runtime path of "/home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/lib/first_package/hello" to ""
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/ament_index/resource_index/package_run_dependencies/first_package
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/ament_index/resource_index/parent_prefix_path/first_package
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/environment/ament_prefix_path.sh
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/environment/ament_prefix_path.dsv
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/environment/path.sh
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/environment/path.dsv
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/local_setup.bash
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/local_setup.sh
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/local_setup.zsh
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/local_setup.dsv
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/package.dsv
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/ament_index/resource_index/packages/first_package
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/cmake/first_packageConfig.cmake
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/cmake/first_packageConfig-version.cmake
+-- Installing: /home/mich/School/702ENPM/enpm702_fall2024/ros702_ws/install/first_package/share/first_package/package.xml
