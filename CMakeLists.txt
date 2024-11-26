@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 3.20.0)
 project(TARG VERSION 0.1.0)
 
-include_directories(lecture7/include)
-
 # Compilation flags
 add_compile_options(-Wall -pedantic-errors)
 
-include_directories(lecture8/include)
+include_directories(lecture10/include)
 # Add executable
 
-add_executable(TARG lecture8/src/main.cpp lecture8/src/date.cpp lecture8/src/engine.cpp lecture8/src/driver.cpp lecture8/src/vehicle.cpp)
+#add_executable(TARG lecture8/src/main.cpp lecture8/src/date.cpp lecture8/src/engine.cpp lecture8/src/driver.cpp lecture8/src/vehicle.cpp)
+add_executable(TARG lecture10/src/main.cpp)
 
 add_custom_command(TARGET TARG POST_BUILD
     COMMAND ./TARG | c++filt -t

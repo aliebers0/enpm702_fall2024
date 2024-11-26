@@ -40,6 +40,10 @@ lecture8.zip
 
 # cmake stuff
 build
+ros702_ws2/build/*
+ros702_ws2/log/*
+ros702_ws/build/*
+ros702_ws/log/*
 
 # assignments
 rwa2

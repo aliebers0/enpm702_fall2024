@@ -1,11 +1,11 @@
 #include <rclcpp/rclcpp.hpp>
-#include "first_package/first_node.hpp"
+#include "bot_publsiher.hpp"
 
 int main(int argc, char** argv) {
     // init
     rclcpp::init(argc, argv);
     // node
-    auto node = std::make_shared<FirstNode>("hello");
+    auto node = std::make_shared<BotPublisher>("bot_publisher");
     RCLCPP_INFO_STREAM(node->get_logger(), "Hello");
     // cleanup
     rclcpp::spin(node);
