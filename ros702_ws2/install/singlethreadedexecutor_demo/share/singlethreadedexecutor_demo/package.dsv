@@ -1,0 +1,8 @@
+source;share/singlethreadedexecutor_demo/hook/cmake_prefix_path.ps1
+source;share/singlethreadedexecutor_demo/hook/cmake_prefix_path.dsv
+source;share/singlethreadedexecutor_demo/hook/cmake_prefix_path.sh
+source;share/singlethreadedexecutor_demo/local_setup.bash
+source;share/singlethreadedexecutor_demo/local_setup.dsv
+source;share/singlethreadedexecutor_demo/local_setup.ps1
+source;share/singlethreadedexecutor_demo/local_setup.sh
+source;share/singlethreadedexecutor_demo/local_setup.zsh

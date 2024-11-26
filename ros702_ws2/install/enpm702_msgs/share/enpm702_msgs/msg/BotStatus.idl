@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from enpm702_msgs/msg/BotStatus.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module enpm702_msgs {
+  module msg {
+    typedef double double__2[2];
+    module BotStatus_Constants {
+      const uint8 BURGER = 1;
+      const uint8 WAFFLE = 2;
+      const uint8 WAFFLE_PI = 3;
+    };
+    @verbatim (language="comment", text=
+      "The field model will take only one of the three following values")
+    struct BotStatus {
+      @verbatim (language="comment", text=
+        "BURGER, WAFFLE, or WAFFLE_PI")
+      uint8 model;
+
+      @verbatim (language="comment", text=
+        "x, y, theta")
+      geometry_msgs::msg::Pose2D pose;
+
+      @verbatim (language="comment", text=
+        "[linear.x, angular.z]")
+      double__2 velocities;
+    };
+  };
+};

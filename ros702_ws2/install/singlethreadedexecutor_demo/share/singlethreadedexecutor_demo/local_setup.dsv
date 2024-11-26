@@ -1,0 +1,2 @@
+source;share/singlethreadedexecutor_demo/environment/ament_prefix_path.sh
+source;share/singlethreadedexecutor_demo/environment/path.sh
